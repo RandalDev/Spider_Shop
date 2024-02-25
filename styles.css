@@ -1,0 +1,1175 @@
+/*ROJO   rgb(187, 56, 62);
+CREMA   rgb(252, 244, 236);
+AZUL   rgb(20, 84, 132);
+GRIS FUERTE   rgb(136, 128, 130);
+GRIS SUAVE    rgb(193, 185, 184);
+NEGRO    rgb(10 ,10 , 10); 
+
+---
+LIGHT GRAY    #F0F5F9
+GRAY   #C9D6DF
+DARKER GRAY   #52616B
+*/
+
+
+ @-webkit-keyframes menu {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes menu {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700;6..12,1000&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Fira+Sans:wght@800&family=Lato:ital,wght@1,900&family=Nunito+Sans:opsz,wght@6..12,500&family=Raleway:wght@500&display=swap');
+
+html body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(252, 244, 236);
+}
+
+/*Parte del Menu*/
+
+.menu-container{
+    background-color: rgb(187, 56, 62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0  1em  0 1em;
+}
+
+.spidershop-logo{
+    width: 6em;
+}
+
+
+.Spider-Shop-Title{
+    color:  rgb(245 ,245 , 245);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 2.0em;
+    margin: 0 0 0 1em;
+    
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin: 0  1em  0  1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    margin: 0  0.2em  0  0.2em;
+    color:  rgb(10 ,10 , 10);
+}
+
+.menu-responsive{
+    display: flex;
+    margin: 0;
+}
+
+/*Elementos a que linkean a otras parte de la página*/
+
+/*Spider shop*/
+.home{
+    text-decoration: none;
+    color:  rgb(245 ,245 , 245);
+    display: flex;
+    align-items: center;
+}
+
+.home:hover{
+    text-shadow: 0 0 3em  rgb(245 ,245 , 245);
+    transition: text-shadow 1.0s;
+}
+
+/*Linkea a otras partes de la tienda*/
+.menu{
+    text-decoration: none;
+    color:  rgb(245 ,245 , 245);
+}
+
+.menu:hover{
+    color: rgb(20, 84, 132);
+    transition: text-shadow 0.4s;
+    text-shadow: 0px 0 1em #52616B;
+    transition: color 0.2s;
+	-webkit-animation: menu 1.5s ease-in-out infinite both;
+	        animation: menu 1.5s ease-in-out infinite both;
+    
+}
+
+
+/*Redes sociales*/
+.social-media{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*instagram*/
+.instagram-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 185, 184);
+    margin: 0 0.5em 0 0.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+
+}
+
+.instagram-circle:hover{
+    background-image: linear-gradient(45deg, rgba(254,218,117,1), rgba(250,126,30,1), rgba(214,41,118,1), rgba(150,47,191,1), rgba(79,91,213,1));
+}
+
+.fa-instagram:hover{
+    color:white;
+    transition: color 0.4s;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    padding: 0.35em;
+}
+
+
+/*whatsapp*/
+.whatsapp-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 185, 184);
+    margin: 0 0.5em 0 0.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+}
+
+.whatsapp-circle:hover{
+    background-color: rgb(37, 211, 102);
+    transition: background-color 0.4s;
+}
+
+.fa-whatsapp:hover{
+    color:white;
+    transition: color 0.4s;
+}
+
+.fa-whatsapp:before {
+    padding: 0.35em;
+}
+
+
+/*facebook*/
+
+.facebook-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 185, 184);
+    margin: 0 0.5em 0 0.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+}
+
+.facebook-circle:hover{
+    background-color: rgb(24, 119, 242);
+    transition: background-color 0.4s;
+}
+
+.fa-facebook-f:hover{
+    color:white;
+    transition: color 0.4s;
+}
+
+.fa-facebook-f:before {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+}
+
+
+/*    NEW ARRIVAL/HOT SECTION SECTION */ 
+
+/* CONTIENE TODA LA SECCIÓN*/
+.new-arrival-container{
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+/*--------*/
+
+/* First Box*/
+.first-new-arrival{
+    background-color: #52616B;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    color: rgb(245,245,245);
+}
+
+
+.first-arrival-text{
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-arrival-img{
+    width: 100%;
+    display: flex;
+}
+
+.first-arrival-size{
+    display: flex;
+}
+
+
+
+
+h1{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.5em;
+}
+
+h2{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+h3{
+    color:  rgb(10 ,10 , 10);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 2.0em;
+    margin: 0;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.first-box{
+    display: flex;
+}
+
+
+.second-and-third-box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box{
+    margin: 0.5em;
+    width: 100%;
+    height: 100%;
+}
+
+.size-defined{
+    margin-left: 0.5em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.blanco{
+    color: rgb(245,245,245);
+}
+
+/*Reservar botones*/
+
+.button-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.reservar{
+    width: 7em;
+    height: 3.2em;
+    background-color: #F0F5F9;
+    border: none;
+    border-radius: 0.5em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+/*NUEVA PARTE*/
+
+.nueva-prenda{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 0 1em 0 1em;
+    background-color: rgb(136, 128, 130);
+}
+
+.size{
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.ropa{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 1em;
+    border: 0.25em solid rgba(193, 185, 184, 0.25);
+
+}
+
+.ropa-nombre{
+    margin: 0.5em 0 0.3em 0;
+}
+
+.ropa-descripcion{
+    margin: 0.10em 0 0.10em 0;
+}
+
+.reservar-ropa{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+
+
+.texto-reservar{
+    color: white;
+    position: absolute;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 250%;
+    text-shadow: rgba(255,255,255,0.50) 0px 0px 10px;
+}
+
+
+.reservar-ropa:hover .ropa{
+    width: 102.5%;
+    transition: width 0.5s;
+    filter: blur(0.2em) brightness(50%);
+    transition: 0.5s;
+}
+
+.reservar-ropa:hover .texto-reservar{
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+
+.reservar-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ropa-ver{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.wg-container{
+    display: flex;
+    margin: 0.5em 1em 0.5em 1em;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(193, 185, 184);;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.whatsapp-group{
+    width: 95%;
+}
+
+.wg-boton{
+    height: 3em;
+    width: 10em;
+    background-color: green;
+    display: flex;
+    border-radius: 1.5em;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.4em 0.4em rgba(15,15,15,0.5);
+    transition: background-color 0.25s;
+}
+
+.wg-boton:hover{
+    transition: background-color 0.25s;
+    background-color: rgb(0, 170, 0)
+}
+
+.wg-parrafo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+
+}
+
+.wg-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(15,15,15)
+}
+
+.boton-texto{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:  rgb(245 ,245 , 245);;
+}
+
+.wg-enlace{
+    text-decoration: none;
+}
+
+.categorias{
+    background-color: #52616B;
+    width: 14em;
+    height: 3em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    margin-top: 2em;
+
+}
+
+.categorias-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(240,240,240)
+
+}
+
+
+
+/*----------------------*/
+/*PARTE DE LA ROPA*/
+/*----------------------*/
+
+.cuerpo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    margin: 0;
+}
+
+.ropa-container{
+    display: flex;
+    padding: 0.2em;
+    justify-content: center;
+    margin: 2em 0 0 0;
+    width: 95%;
+}
+
+.imagen-espacio{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    margin: 0 1em 0 1em;
+}
+
+.ropa{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 1em;
+    border: 0.25em solid rgba(193, 185, 184, 0.25);
+    filter: brightness(75%);
+
+}
+
+.ropa-nombre{
+    margin: 0.5em 0 0.3em 0;
+}
+
+.ropa-descripcion{
+    margin: 0.10em 0 0.10em 0;
+}
+
+.reservar-ropa{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+
+
+.texto-reservar{
+    color: white;
+    position: absolute;
+    opacity: 95%;
+    transition: opacity 0.5s;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 200%;
+    text-shadow: rgba(255,255,255,0.50) 0px 0px 10px;
+}
+
+
+.reservar-ropa:hover .ropa{
+    width: 102.5%;
+    transition: width 0.5s;
+    filter: blur(0.2em) brightness(50%);
+    transition: 0.5s;
+}
+
+.reservar-ropa:hover .texto-reservar{
+    opacity: 100%;
+    font-size: 250%;
+    transition: opacity 0.5s;
+    transition: font-size 0.5s;
+}
+
+
+.reservar-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ropa-ver{
+    display: flex;
+    align-items: center;
+}
+
+.fa-eye{
+    color:rgb(136, 128, 130);
+    margin-left: 1em;
+}
+
+.estado-div{
+    background-color:rgba(193, 185, 184, 0.80);
+    border-radius: 50px;
+    padding: 0.5em 0.60em 0.50em 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75em;
+}
+
+
+
+.verificar-estado{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.disponible{
+    color: #009929;
+    text-shadow: rgba(0, 153, 41,0.5) 0px 0px 10px;
+}
+
+.reservado{
+    color: #e80729;
+    text-shadow: rgba(232, 7, 41,0.25) 0px 0px 10px;
+}
+
+.comprada{
+    filter: grayscale(100%);
+}
+
+.ver-enlace{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.fa-xl-eye{
+    font-size: 1.5em;
+    line-height: .04167em;
+}
+
+
+/*ROPA PARTE FUENTES*/
+
+.ropa-descripcion{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.ropa-nombre{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 1.5em;
+    background-color: rgb(6, 48, 79);
+    padding: 1.5% 3% 1.5% 3%;
+}
+
+.footer-align{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-general{
+    color: rgb(240,240,240);
+}
+
+h5{
+    font-size: 1.5em;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.metodo-pago{
+    font-size: 1em;
+}
+
+.consultar{
+    text-decoration: none;
+    color: rgb(240,240,240);
+    margin-bottom: 0.8em;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+b{
+    font-size: 1.25em;
+    font-weight:normal;
+    display: flex;
+    justify-content: center;
+}
+
+.otros-dias{
+    text-decoration: none;
+    color: rgb(240,240,240);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-prendas{
+    display: flex;
+    flex-direction: column;
+    color: rgb(240,240,240);
+}
+
+.social-media-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5em;
+}
+
+.enlace:hover{
+    color: rgb(240,240,240);
+    text-decoration: underline;
+}
+
+/* RESPONSIVE PART*/
+
+@media only screen and (max-width: 1310px) {
+
+    /*MENU PART*/
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0  0.2em  0 0.2em;
+    }
+
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        margin: 0.1em 0.8em 0.1em 0.8em;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column ;
+        margin-bottom: 1em;
+    }
+
+    .social-media{
+        margin-bottom: 0.5em;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .ropa-container{
+        display: flex;
+        padding: 0.2em;
+        margin: 2em 0 0 0;
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        /* align-content: center; */
+        justify-content: center;
+    }
+
+    .Spider-Shop-Title{
+        color:  rgb(245 ,245 , 245);
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 1000;
+        font-size: 2.0em;
+        margin : 0
+        
+    }
+
+    .wg-imagen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .menu-lista{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .texto-reservar{
+        font-size: 250%;
+    }
+
+    .ropa-nombre{
+        font-family: 'Rubik', sans-serif;
+        font-size: 2.6em;
+    }
+
+    .ropa-descripcion{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.0em;
+    }
+
+    .imagen-espacio{
+        margin-bottom: 2.5em;
+    }
+
+    .estado-div{
+        background-color:rgba(193, 185, 184, 0.80);
+        border-radius: 50px;
+        padding: 0.6em 1.5em 0.6em 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.75em;
+    }
+    
+    
+    
+    .verificar-estado{
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        font-size: 1.4em;
+    }
+
+    .ropa-ver{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ver-enlace{
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        margin-bottom: 1.5em;
+    }
+
+    .fa-xl-eye{
+        font-size: 2.0em;
+        line-height: .04167em;
+    }
+
+    .footer-align{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer-prendas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-general{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media-footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5em;
+    }
+}
+
+
+
+
+
+
+
+/* RESPONSIVE PART*/
+
+
+@media only screen and (max-width: 1310px) {
+
+    /*MENU PART*/
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0  0.2em  0 0.2em;
+    }
+
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 75%;
+    }
+
+    li{
+        margin: 0.1em 0.8em 0.1em 0.8em;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column ;
+        margin-bottom: 1em;
+    }
+
+    .social-media{
+        margin-bottom: 0.5em;
+    }
+
+}
+
+.new-arrival-container {
+        padding: 0.1em;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .first-new-arrival{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: #52616B;
+        color: rgb(245,245,245);
+    }
+    
+    
+    .first-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .first-arrival-img{
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .first-arrival-size{
+        display: flex;
+    }
+
+    .second-and-third-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    /*Second Arrival Responsive Tablet*/
+    .second-new-arrival{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F0F5F9;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .second-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-arrival-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    .second-arrival-size{
+        display: flex;
+
+    }
+    
+    .second-arrival-container{
+        display: flex;
+    }
+
+
+    /*Third Arrival Tablet*/
+
+    .third-new-arrival{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #C9D6DF;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .third-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-arrival-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .third-arrival-size{
+        display: flex;
+    }
+    
+    .third-arrival-container{
+        display: flex;
+    }
+
+
+
+@media only screen and (max-width: 900px){
+    /*First Arrival Responsive*/
+    .first-new-arrival{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #52616B;
+        color: rgb(245,245,245);
+    }
+    
+    
+    .first-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .first-arrival-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .first-arrival-size{
+        display: flex;
+    }
+    
+    .first-arrival-container{
+        display: flex;
+    }
+
+    /*Second Arrival Responsive*/
+
+    .second-new-arrival{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F0F5F9;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .second-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-arrival-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .second-arrival-size{
+        display: flex;
+
+    }
+    
+    .second-arrival-container{
+        display: flex;
+    }
+    
+
+    /*Third Arrival Responsive*/
+    .third-new-arrival{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #C9D6DF;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .third-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-arrival-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .third-arrival-size{
+        display: flex;
+    }
+    
+    .third-arrival-container{
+        display: flex;
+    }
+
+    
+
+
+    .wg-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em 1em 0.5em 1em;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(193, 185, 184);;
+        padding: 2em;
+        border-radius: 2em;
+    }
+
+    .whatsapp-group{
+        width: 80%;
+    }
+}
