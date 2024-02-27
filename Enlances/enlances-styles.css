@@ -12,7 +12,7 @@ DARKER GRAY   #52616B
 */
 
 
- @-webkit-keyframes menu {
+@-webkit-keyframes menu {
     0% {
       -webkit-transform: scale(1);
               transform: scale(1);
@@ -259,10 +259,9 @@ a{
 
 .ropa-container{
     display: flex;
-    padding: 0.2em;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    margin: 2em 0 0 0;
-    width: 95%;
 }
 
 .imagen-espacio{
@@ -271,7 +270,8 @@ a{
     width: auto;
     align-items: center;
     text-align: center;
-    margin: 0 1em 0 1em;
+    margin: 1.5em 1em 0 1em;
+    width: 30%;
 }
 
 .ropa{
@@ -523,11 +523,17 @@ b{
 
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 975px){
+    .imagen-espacio{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 660px){
     .ropa-container{
         display: flex;
         padding: 0.2em;
-        margin: 2em 0 0 0;
+        margin: 0em 0 0 0;
         width: 95%;
         flex-direction: column;
         align-items: center;
@@ -553,6 +559,7 @@ b{
         margin-bottom: 1.5em;
         padding-bottom: 3em;
         border-bottom: 0.20em solid #C9D6DF;
+        width: auto;
     }
 
     .estado-div{
