@@ -772,7 +772,16 @@ b{
         margin-bottom: 0.5em;
     }
 
+
+    .menu-lista{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
+
 
 @media only screen and (max-width: 600px){
     .ropa-container{
@@ -887,6 +896,13 @@ b{
         display: flex;
         justify-content: center;
         margin-top: 0.5em;
+    }
+
+    .menu-lista{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
