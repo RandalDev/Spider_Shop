@@ -550,7 +550,9 @@ b{
     }
 
     .imagen-espacio{
-        margin-bottom: 2.5em;
+        margin-bottom: 1.5em;
+        padding-bottom: 3em;
+        border-bottom: 0.20em solid #C9D6DF;
     }
 
     .estado-div{
@@ -561,9 +563,14 @@ b{
         align-items: center;
         justify-content: center;
         margin-bottom: 0.75em;
+        margin-top: 1.5em
     }
     
-    
+    .fa-eye{
+        color: rgb(136, 128, 130);
+        margin-left: 0em;
+    }
+
     
     .verificar-estado{
         font-family: 'IBM Plex Sans', sans-serif;
