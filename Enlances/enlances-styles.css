@@ -527,6 +527,13 @@ b{
     .imagen-espacio{
         width: 45%;
     }
+    
+    .menu-lista{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 660px){
